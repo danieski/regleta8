@@ -13,9 +13,24 @@ public class Room : MonoBehaviour
     public Room rightRoom;
     public Room bottomRoom;
 
+    public GameObject[] doors;
+    public GameObject[] enemies;
+
+    private int deadEnemies = 0;
+    private bool Completed { get { return deadEnemies >= enemies.Length; }  }
+
     public void EnterRoom()
     {
         GameManager.instance.mainCamera.transform.DOMove(transform.position, 0.5f).SetEase(Ease.InOutFlash);
+        if (Completed) return;
+        for (int i = 0; i < doors.Length; i++)
+        {
+            doors[i].SetActive(true);
+        }
+        for (int i = 0; i < enemies.Length; i++)
+        {
+            enemies[i].SetActive(true);
+        }
     }
 
     public void ExitRoom(Direction direction)
@@ -38,5 +53,17 @@ public class Room : MonoBehaviour
                 
         }
         room.EnterRoom();
+    }
+
+    public void EnemyDead()
+    {
+        deadEnemies++;
+        if (Completed)
+        {
+            for (int i = 0; i < doors.Length; i++)
+            {
+                doors[i].SetActive(false);
+            }
+        }
     }
 }
