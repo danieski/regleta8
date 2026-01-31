@@ -1,9 +1,12 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class HealthComponent : MonoBehaviour
 {
     public int currentHealth;
     public int maxHealth = 3;
+
+    [SerializeField] private UnityEvent onDie;
 
     public void OnDie()
     {
@@ -15,6 +18,7 @@ public class HealthComponent : MonoBehaviour
             character.SwitchState(character.deathState);
             return;
         }
+        onDie.Invoke();
         Destroy(gameObject);
 
     }

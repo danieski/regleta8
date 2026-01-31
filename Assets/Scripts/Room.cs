@@ -1,5 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
+using System.Collections;
 
 public class Room : MonoBehaviour
 {
@@ -19,40 +20,44 @@ public class Room : MonoBehaviour
     private int deadEnemies = 0;
     private bool Completed { get { return deadEnemies >= enemies.Length; }  }
 
-    public void EnterRoom()
+    public IEnumerator EnterRoom()
     {
-        GameManager.instance.mainCamera.transform.DOMove(transform.position, 0.5f).SetEase(Ease.InOutFlash);
-        if (Completed) return;
-        for (int i = 0; i < doors.Length; i++)
+        GameManager.instance.mainCamera.transform.DOMove(transform.position + Vector3.up * GameManager.instance.mainCamera.transform.position.y, 0.5f).SetEase(Ease.InOutFlash);
+        if (!Completed)
         {
-            doors[i].SetActive(true);
-        }
-        for (int i = 0; i < enemies.Length; i++)
-        {
-            enemies[i].SetActive(true);
+            yield return new WaitForSeconds(1f);
+
+            for (int i = 0; i < doors.Length; i++)
+            {
+                doors[i].SetActive(true);
+            }
+            for (int i = 0; i < enemies.Length; i++)
+            {
+                enemies[i].SetActive(true);
+            }
         }
     }
 
-    public void ExitRoom(Direction direction)
+    public void ExitRoom(string direction)
     {
         Room room = leftRoom;
         switch (direction)
         {
-            case Direction.LEFT:
+            case "LEFT":
                 room = leftRoom;
                 break;
-            case Direction.TOP:
+            case "TOP":
                 room = topRoom;
                 break;
-            case Direction.RIGHT:
+            case "RIGHT":
                 room = rightRoom;
                 break;
-            case Direction.BOTTOM:
+            case "BOTTOM":
                 room = bottomRoom;
                 break;
                 
         }
-        room.EnterRoom();
+        room.StartCoroutine(room.EnterRoom());
     }
 
     public void EnemyDead()
@@ -62,7 +67,8 @@ public class Room : MonoBehaviour
         {
             for (int i = 0; i < doors.Length; i++)
             {
-                doors[i].SetActive(false);
+                doors[i].GetComponent<MeshRenderer>().enabled = false;
+                doors[i].GetComponent<Collider>().isTrigger = true;
             }
         }
     }
