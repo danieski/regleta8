@@ -1,10 +1,11 @@
+using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class EnemyScript : MonoBehaviour
 {
-    public Transform LastPlayerPos;
+    public Vector3 LastPlayerPos;
     public Transform targetPosition;
     public CharacterController controller;
     public float speed = 3f;
@@ -64,10 +65,10 @@ public class EnemyScript : MonoBehaviour
     IEnumerator JumpCoroutine()
     {
         isJumping = true;
+        LastPlayerPos = targetPosition.position;
         yield return new WaitForSeconds(2f);
         isJumping = false;
-        LastPlayerPos.position = targetPosition.position;
-        transform.position = LastPlayerPos.position + (Vector3.up *3);
+        transform.DOMove(LastPlayerPos + (Vector3.up * 3), 0.5f).SetEase(Ease.InFlash);
         currentState = State.Falling;
     }
 }

@@ -58,6 +58,10 @@ public class Room : MonoBehaviour
                 
         }
         room.StartCoroutine(room.EnterRoom());
+        for (int i = 0; i < doors.Length; i++)
+        {
+            doors[i].SetActive(false);
+        }
     }
 
     public void EnemyDead()
