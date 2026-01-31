@@ -5,6 +5,9 @@ public class Room : MonoBehaviour
 {
     public enum Direction { LEFT, TOP, RIGHT, BOTTOM };
 
+    public RoomInfo roomInfo;
+    public int numClockRotations;
+
     public Room leftRoom;
     public Room topRoom;
     public Room rightRoom;

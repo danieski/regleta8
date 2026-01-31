@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            mainCamera = Camera.main;
+            if (mainCamera == null)
+                mainCamera = Camera.main;
         } else
         {
             Destroy(gameObject);
