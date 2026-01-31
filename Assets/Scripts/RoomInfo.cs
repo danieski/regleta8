@@ -1,6 +1,6 @@
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Room", menuName = "Scriptable Objects/Room")]
+[CreateAssetMenu(fileName = "RoomInfo", menuName = "Scriptable Objects/RoomInfo")]
 public class RoomInfo : ScriptableObject
 {
     public enum RoomType { INIT, NORMAL, BOSS }
