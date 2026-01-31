@@ -11,10 +11,10 @@ public class HurtComponent : MonoBehaviour
 
     void Update()
     {
-        
     }
     private void OnTriggerEnter(Collider collision)
     {
+
         print("Me: "+gameObject.name+" HurtComponent collided with " + collision.gameObject.name);
         HealthComponent healthComponent = collision.gameObject.GetComponent<HealthComponent>();
         if (healthComponent != null)
