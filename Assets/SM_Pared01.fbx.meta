@@ -7,6 +7,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Material.002
+    second: {fileID: 2100000, guid: 9b3bdce741ee43e439c885e9f710f2fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: Mio3CheckerMapMat_1024
     second: {fileID: 2100000, guid: 076e52a13ffe69c439af040afeae3895, type: 2}
   materials:
