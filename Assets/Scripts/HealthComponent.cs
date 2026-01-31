@@ -9,7 +9,14 @@ public class HealthComponent : MonoBehaviour
     {
         // Handle death logic here
         Debug.Log("Entity has died.");
+        if(gameObject.GetComponent<CharacterStateManager>() != null)
+        {
+            CharacterStateManager character = gameObject.GetComponent<CharacterStateManager>();
+            character.SwitchState(character.deathState);
+            return;
+        }
         Destroy(gameObject);
+
     }
     public void TakeDamage(int damage)
     {
