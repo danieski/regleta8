@@ -3,7 +3,12 @@ guid: a605f2766ae4c174d8af032f2ace4fab
 ModelImporter:
   serializedVersion: 24200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mio3CheckerMapMat_1024
+    second: {fileID: 2100000, guid: 414fa014e5de1354ea92aa618f666ba1, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -91,7 +96,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 1
+    globalScale: 0.01
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
