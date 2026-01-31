@@ -794,6 +794,7 @@ GameObject:
   - component: {fileID: 6230871019361119230}
   - component: {fileID: 404406119540690864}
   - component: {fileID: 1070763741548856205}
+  - component: {fileID: 8903897600449535782}
   m_Layer: 0
   m_Name: PUERTA_ABAJO
   m_TagString: Untagged
@@ -888,12 +889,39 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &8903897600449535782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 876837156759716526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1398415935620275279}
+        m_TargetAssemblyTypeName: Room, Assembly-CSharp
+        m_MethodName: ExitRoom
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: BOTTOM
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &919048342240526787
 GameObject:
   m_ObjectHideFlags: 0
@@ -3221,6 +3249,7 @@ GameObject:
   - component: {fileID: 5903364194981596880}
   - component: {fileID: 5896440791855122693}
   - component: {fileID: 7191354267163088381}
+  - component: {fileID: 6510661451985251687}
   m_Layer: 0
   m_Name: PUERTA_IZQUIERDA
   m_TagString: Untagged
@@ -3315,12 +3344,39 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6510661451985251687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3730739968619567369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1398415935620275279}
+        m_TargetAssemblyTypeName: Room, Assembly-CSharp
+        m_MethodName: ExitRoom
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: LEFT
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3976321573688615821
 GameObject:
   m_ObjectHideFlags: 0
@@ -3423,6 +3479,7 @@ GameObject:
   - component: {fileID: 2082167102351871474}
   - component: {fileID: 7389015734537509021}
   - component: {fileID: 5047914735147716890}
+  - component: {fileID: 7838194558820384909}
   m_Layer: 0
   m_Name: PUERTA_ARRIBA
   m_TagString: Untagged
@@ -3517,12 +3574,39 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7838194558820384909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4061258496501273278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1398415935620275279}
+        m_TargetAssemblyTypeName: Room, Assembly-CSharp
+        m_MethodName: ExitRoom
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: TOP
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4122374744761914138
 GameObject:
   m_ObjectHideFlags: 0
@@ -4834,6 +4918,12 @@ MonoBehaviour:
   topRoom: {fileID: 0}
   rightRoom: {fileID: 0}
   bottomRoom: {fileID: 0}
+  doors:
+  - {fileID: 3730739968619567369}
+  - {fileID: 4061258496501273278}
+  - {fileID: 6201897969700181078}
+  - {fileID: 876837156759716526}
+  enemies: []
 --- !u!1 &5665351543141816217
 GameObject:
   m_ObjectHideFlags: 0
@@ -5386,6 +5476,7 @@ GameObject:
   - component: {fileID: 2382601417446228877}
   - component: {fileID: 2778558810747248253}
   - component: {fileID: 8228575391036478872}
+  - component: {fileID: 141688329475739551}
   m_Layer: 0
   m_Name: PUERTA_DERECHA
   m_TagString: Untagged
@@ -5480,12 +5571,39 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &141688329475739551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6201897969700181078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
+  onTrigger:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1398415935620275279}
+        m_TargetAssemblyTypeName: Room, Assembly-CSharp
+        m_MethodName: ExitRoom
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: RIGHT
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6421623469985815462
 GameObject:
   m_ObjectHideFlags: 0
