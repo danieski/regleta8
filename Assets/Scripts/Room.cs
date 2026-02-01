@@ -71,7 +71,7 @@ public class Room : MonoBehaviour
         {
             for (int i = 0; i < doors.Length; i++)
             {
-                doors[i].GetComponent<MeshRenderer>().enabled = false;
+                doors[i].transform.GetChild(0).gameObject.SetActive(false);
                 doors[i].GetComponent<Collider>().isTrigger = true;
             }
         }
