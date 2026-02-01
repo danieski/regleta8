@@ -3646,6 +3646,7 @@ GameObject:
   - component: {fileID: 333214070846805632}
   - component: {fileID: 398083550040736013}
   - component: {fileID: 7712808230197158698}
+  - component: {fileID: 9131608463637133659}
   m_Layer: 0
   m_Name: SM_Puerta01 (4)
   m_TagString: Untagged
@@ -3744,8 +3745,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.10000005, y: 0.02701053, z: 0.100000024}
-  m_Center: {x: -0.05000003, y: 0.0064947684, z: 0.050000004}
+  m_Size: {x: 0.025762687, y: 0.02701053, z: 0.10000003}
+  m_Center: {x: -0.087118745, y: 0.006494769, z: 0.05000001}
+--- !u!65 &9131608463637133659
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3637447297283733402}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.02688497, y: 0.02701053, z: 0.10000003}
+  m_Center: {x: -0.013442414, y: 0.0064947684, z: 0.05000001}
 --- !u!1 &3678369949971798318
 GameObject:
   m_ObjectHideFlags: 0
@@ -4274,6 +4296,7 @@ GameObject:
   - component: {fileID: 4434551069928685505}
   - component: {fileID: 1949215024444533110}
   - component: {fileID: 915738295610292469}
+  - component: {fileID: 7846560659296485891}
   m_Layer: 0
   m_Name: SM_Puerta01 (1)
   m_TagString: Untagged
@@ -4372,8 +4395,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.099999994, y: 0.0270105, z: 0.10000002}
-  m_Center: {x: -0.050000004, y: 0.0064947535, z: 0.05000001}
+  m_Size: {x: 0.026914725, y: 0.0270105, z: 0.10000003}
+  m_Center: {x: -0.08654254, y: 0.0064947545, z: 0.05000001}
+--- !u!65 &7846560659296485891
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4387544083422908332}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.025419645, y: 0.0270105, z: 0.10000003}
+  m_Center: {x: -0.0127098225, y: 0.0064947545, z: 0.05000001}
 --- !u!1 &4397089474954656517
 GameObject:
   m_ObjectHideFlags: 0

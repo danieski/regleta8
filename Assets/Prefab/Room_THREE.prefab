@@ -458,6 +458,7 @@ GameObject:
   - component: {fileID: 4312382900699772119}
   - component: {fileID: 7299268679172837375}
   - component: {fileID: 4594770457830165879}
+  - component: {fileID: 2863678326021793652}
   m_Layer: 0
   m_Name: SM_Puerta01 (2)
   m_TagString: Untagged
@@ -556,8 +557,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.100000024, y: 0.02701051, z: 0.1}
-  m_Center: {x: -0.050000012, y: 0.0064947503, z: 0.05}
+  m_Size: {x: 0.02539829, y: 0.02701051, z: 0.099999994}
+  m_Center: {x: -0.012699167, y: 0.00649475, z: 0.049999997}
+--- !u!65 &2863678326021793652
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 877076862168354797}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.025745507, y: 0.02701051, z: 0.09999999}
+  m_Center: {x: -0.087127514, y: 0.0064947493, z: 0.049999993}
 --- !u!1 &909342859693810501
 GameObject:
   m_ObjectHideFlags: 0
@@ -3995,6 +4017,7 @@ GameObject:
   - component: {fileID: 3769582402302082888}
   - component: {fileID: 8799194584849354371}
   - component: {fileID: 2224301345483792703}
+  - component: {fileID: 5323050255895750491}
   m_Layer: 0
   m_Name: SM_Puerta01 (1)
   m_TagString: Untagged
@@ -4093,8 +4116,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.099999994, y: 0.0270105, z: 0.10000002}
-  m_Center: {x: -0.050000004, y: 0.0064947535, z: 0.05000001}
+  m_Size: {x: 0.025034523, y: 0.027010499, z: 0.100000024}
+  m_Center: {x: -0.01251728, y: 0.006494753, z: 0.05000001}
+--- !u!65 &5323050255895750491
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4059535224042904854}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.026161231, y: 0.027010499, z: 0.100000024}
+  m_Center: {x: -0.086919256, y: 0.006494753, z: 0.05000001}
 --- !u!1 &4098606796887010536
 GameObject:
   m_ObjectHideFlags: 0
@@ -5678,6 +5722,7 @@ GameObject:
   - component: {fileID: 6256780049206093802}
   - component: {fileID: 4404929263604942473}
   - component: {fileID: 2943249595459436144}
+  - component: {fileID: 4509269738241835174}
   m_Layer: 0
   m_Name: SM_Puerta01 (3)
   m_TagString: Untagged
@@ -5776,8 +5821,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.099999994, y: 0.027010495, z: 0.099999994}
-  m_Center: {x: -0.049999997, y: 0.006494737, z: 0.049999997}
+  m_Size: {x: 0.02730101, y: 0.027010495, z: 0.099999994}
+  m_Center: {x: -0.086349376, y: 0.0064947377, z: 0.049999997}
+--- !u!65 &4509269738241835174
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5885425926744665085}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.025176987, y: 0.027010495, z: 0.099999994}
+  m_Center: {x: -0.012588467, y: 0.0064947377, z: 0.049999997}
 --- !u!1 &6047553982001832175
 GameObject:
   m_ObjectHideFlags: 0

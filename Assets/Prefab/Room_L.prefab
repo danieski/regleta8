@@ -870,6 +870,7 @@ GameObject:
   - component: {fileID: 264153704255219087}
   - component: {fileID: 5470411248100231541}
   - component: {fileID: 7900812816110832453}
+  - component: {fileID: 2859068870095642821}
   m_Layer: 0
   m_Name: SM_Puerta01 (1)
   m_TagString: Untagged
@@ -968,8 +969,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.10000004, y: 0.027010525, z: 0.100000024}
-  m_Center: {x: -0.050000023, y: 0.0064947116, z: 0.05000001}
+  m_Size: {x: 0.02689563, y: 0.027010527, z: 0.100000024}
+  m_Center: {x: -0.08655228, y: 0.0064947116, z: 0.05000001}
+--- !u!65 &2859068870095642821
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988988375585151716}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.02540813, y: 0.027010527, z: 0.100000024}
+  m_Center: {x: -0.012704102, y: 0.0064947116, z: 0.05000001}
 --- !u!1 &999881820588686213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,6 +1970,7 @@ GameObject:
   - component: {fileID: 2747443857426136663}
   - component: {fileID: 8875264984885741792}
   - component: {fileID: 2225747473055034823}
+  - component: {fileID: 1482582359497518489}
   m_Layer: 0
   m_Name: SM_Puerta01 (3)
   m_TagString: Untagged
@@ -2046,8 +2069,29 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.099999994, y: 0.027010495, z: 0.099999994}
-  m_Center: {x: -0.049999997, y: 0.006494752, z: 0.049999997}
+  m_Size: {x: 0.024846114, y: 0.027010495, z: 0.09999999}
+  m_Center: {x: -0.012423057, y: 0.006494752, z: 0.049999993}
+--- !u!65 &1482582359497518489
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670894809927244147}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.026663817, y: 0.027010495, z: 0.09999999}
+  m_Center: {x: -0.086667955, y: 0.006494752, z: 0.049999993}
 --- !u!1 &1684122485620175236
 GameObject:
   m_ObjectHideFlags: 0
