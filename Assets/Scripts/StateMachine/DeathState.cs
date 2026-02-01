@@ -5,7 +5,7 @@ public class DeathState : CharacterBaseState
 
     public override void EnterState(CharacterStateManager character)
     {
-        Debug.Log("Entered Die State");
+        //Debug.Log("Entered Die State");
 
     }
     public override void UpdateState(CharacterStateManager character)

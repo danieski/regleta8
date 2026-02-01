@@ -11,7 +11,7 @@ public class HealthComponent : MonoBehaviour
     public void OnDie()
     {
         // Handle death logic here
-        Debug.Log("Entity has died.");
+        //Debug.Log("Entity has died.");
         if(gameObject.GetComponent<CharacterStateManager>() != null)
         {
             CharacterStateManager character = gameObject.GetComponent<CharacterStateManager>();
