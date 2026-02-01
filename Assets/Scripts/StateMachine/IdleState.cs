@@ -5,7 +5,7 @@ public class IdleState : CharacterBaseState
 
     public override void EnterState(CharacterStateManager character)
     {
-        Debug.Log("Entered Idle State");
+        //Debug.Log("Entered Idle State");
     }
     public override void UpdateState(CharacterStateManager character)
     {

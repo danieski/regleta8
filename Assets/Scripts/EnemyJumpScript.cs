@@ -43,7 +43,7 @@ public class EnemyScript : MonoBehaviour
     }
     void FallDown()
     {
-        controller.Move(Vector3.down * speed * Time.deltaTime);
+        //controller.Move(Vector3.down * speed * Time.deltaTime);
         if (controller.isGrounded)
         {
             currentState = State.Moving;
@@ -64,11 +64,19 @@ public class EnemyScript : MonoBehaviour
     }
     IEnumerator JumpCoroutine()
     {
+        Debug.Log("Preparándome para saltar");
         isJumping = true;
         LastPlayerPos = targetPosition.position;
         yield return new WaitForSeconds(2f);
+        Debug.Log("saltando!");
         isJumping = false;
-        transform.DOMove(LastPlayerPos + (Vector3.up * 3), 0.5f).SetEase(Ease.InFlash);
+        transform.DOMove(LastPlayerPos + (Vector3.up * 3), 0.5f).SetEase(Ease.InBounce);
         currentState = State.Falling;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(LastPlayerPos, 3);
     }
 }

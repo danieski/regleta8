@@ -6,7 +6,7 @@ public class ReloadState : CharacterBaseState
 
     public override void EnterState(CharacterStateManager character)
     {
-        Debug.Log("Reloading...");
+        //Debug.Log("Reloading...");
         
     }
     public override void UpdateState(CharacterStateManager character)
