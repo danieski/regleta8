@@ -13,6 +13,9 @@ public class EnemyScript : MonoBehaviour
     enum State { Moving, Jumping, Falling};
     State currentState;
     public float distance;
+
+    private float timer = 0f;
+
     void Start()
     {
 
@@ -23,10 +26,18 @@ public class EnemyScript : MonoBehaviour
         switch(currentState)
         {
             case State.Moving:
-                MoveTowardsTarget();
+                if (isJumping) return;
+                //MoveTowardsTarget();
+                timer += Time.deltaTime;
+                if (timer > 1f)
+                {
+                    timer = 0f;
+                    currentState = State.Jumping;
+                }
                 break;
             case State.Jumping:
-                Jump();
+                //Jump();
+                if (isJumping) return;
                 StartCoroutine(JumpCoroutine());
                 break;
             case State.Falling:
@@ -66,12 +77,13 @@ public class EnemyScript : MonoBehaviour
     {
         Debug.Log("Preparándome para saltar");
         isJumping = true;
-        LastPlayerPos = targetPosition.position;
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(0.5f);
         Debug.Log("saltando!");
+        LastPlayerPos = targetPosition.position;
+        transform.DOJump(new Vector3(LastPlayerPos.x, transform.position.y, LastPlayerPos.z), 3f, 1, 1f);
+        yield return new WaitForSeconds(0.5f);
         isJumping = false;
-        transform.DOMove(LastPlayerPos + (Vector3.up * 3), 0.5f).SetEase(Ease.InBounce);
-        currentState = State.Falling;
+        currentState = State.Moving;
     }
 
     private void OnDrawGizmos()
