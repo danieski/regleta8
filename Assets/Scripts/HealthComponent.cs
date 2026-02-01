@@ -24,6 +24,14 @@ public class HealthComponent : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
+        if(gameObject.GetComponent<CharacterStateManager>() != null)
+        {
+            CharacterStateManager character = gameObject.GetComponent<CharacterStateManager>();
+            character.OnDamage();
+            if (character.isInvencible)
+                return;
+
+        }
         currentHealth -= damage;
         if (currentHealth <= 0)
         {
