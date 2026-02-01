@@ -7,6 +7,7 @@ public class HealthComponent : MonoBehaviour
     public int maxHealth = 3;
 
     [SerializeField] private UnityEvent onDie;
+    [SerializeField] private GameObject[] uiHearts;
 
     public void OnDie()
     {
@@ -24,7 +25,19 @@ public class HealthComponent : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
+        int preHealth = currentHealth;
         currentHealth -= damage;
+        for (int i = uiHearts.Length - 1; i >= 0; i--)
+        {
+            if (i < currentHealth)
+            {
+                uiHearts[i].SetActive(true);
+            }
+            else
+            {
+                uiHearts[i].SetActive(false);
+            }
+        }
         if (currentHealth <= 0)
         {
             OnDie();
