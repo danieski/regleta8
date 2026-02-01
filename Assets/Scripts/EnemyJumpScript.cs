@@ -18,7 +18,10 @@ public class EnemyScript : MonoBehaviour
 
     void Start()
     {
-
+        if (targetPosition == null)
+        {
+            targetPosition = GameManager.instance.player;
+        }
         currentState = State.Moving;
     }
     void Update()

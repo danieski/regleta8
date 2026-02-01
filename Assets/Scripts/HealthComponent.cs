@@ -33,7 +33,6 @@ public class HealthComponent : MonoBehaviour
                 return;
 
         }
-        int preHealth = currentHealth;
         currentHealth -= damage;
         for (int i = uiHearts.Length - 1; i >= 0; i--)
         {
