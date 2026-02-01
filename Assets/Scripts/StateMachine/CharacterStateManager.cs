@@ -17,7 +17,7 @@ public class CharacterStateManager : MonoBehaviour
     public float reloadTime = 1;
     private BulletScript MyBullet;
     private Vector3 velocityCharacter;
-
+    public bool isInvencible;
     public Animator animator;
     [SerializeField] private LineAttack lineAttack;
 
@@ -51,6 +51,14 @@ public class CharacterStateManager : MonoBehaviour
     {
         controller.Move(velocityCharacter * Time.deltaTime * velocityVariable);
         //currentState.UpdateState(this);
+    }
+    public void OnDamage()
+    {
+        //Invencibilidad
+        Debug.Log("OnDamage");
+        isInvencible = true;
+        StartCoroutine(InvencivilityCorutine());
+
     }
 
     public void SwitchState(CharacterBaseState state)
@@ -115,5 +123,11 @@ public class CharacterStateManager : MonoBehaviour
         SwitchState(idleState);
         Debug.Log("Reloaded.");
 
+    }
+    IEnumerator InvencivilityCorutine()
+    {
+        yield return new WaitForSeconds(1);
+        isInvencible = false;
+        Debug.Log("Ya no soy invencible");
     }
 }
