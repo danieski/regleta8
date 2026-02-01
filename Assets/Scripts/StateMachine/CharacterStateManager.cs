@@ -14,11 +14,14 @@ public class CharacterStateManager : MonoBehaviour
     public CharacterController controller;
     public float velocityVariable = 5f;
     public BulletScript bulletPrefab;
-    public int reloadTime = 1;
+    public float reloadTime = 1;
     private BulletScript MyBullet;
     private Vector3 velocityCharacter;
     public bool isInvencible;
     public Animator animator;
+    [SerializeField] private LineAttack lineAttack;
+
+    private Room.Direction facingDirection = Room.Direction.TOP;
 
 
     void Start()
@@ -68,27 +71,44 @@ public class CharacterStateManager : MonoBehaviour
         Vector2 input = value.ReadValue<Vector2>();
         if (input == Vector2.zero) return;
 
-        Vector3 dir;
 
         if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
         {
             // Izquierda / Derecha
-            dir = new Vector3(Mathf.Sign(input.x), 0f, 0f);
+            facingDirection = input.x > 0f ?Room.Direction.RIGHT : Room.Direction.LEFT;
         }
         else
         {
             // Arriba / Abajo
-            dir = new Vector3(0f, 0f, Mathf.Sign(input.y));
+            facingDirection = input.y > 0f ? Room.Direction.TOP : Room.Direction.BOTTOM;
         }
 
-        transform.rotation = Quaternion.LookRotation(dir);
     }
     public void Shoot(InputAction.CallbackContext value)
     {
 
-        //if (value.phase != InputActionPhase.Performed) return;
-        MyBullet = Instantiate(bulletPrefab, transform.position + transform.forward, transform.rotation);
+        if (value.phase != InputActionPhase.Performed) return;
+        //Debug.Log(currentState);
+        if (idleState != currentState) return;
         SwitchState(reloadState);
+
+        switch (facingDirection)
+        {
+            case Room.Direction.TOP:
+                //animator.SetTrigger("ShootUp");
+                Instantiate(bulletPrefab, transform.position + new Vector3(0, 0, 1), Quaternion.Euler(0, 0, 0));
+                break;
+            case Room.Direction.BOTTOM:
+                //animator.SetTrigger("ShootDown");
+                break;
+            case Room.Direction.LEFT:
+                //animator.SetTrigger("ShootLeft");
+                break;
+            case Room.Direction.RIGHT:
+                //animator.SetTrigger("ShootRight");
+                lineAttack.Attack();
+                break;
+        }
         StartCoroutine(ReloadCoroutine());
     }
     public void OnDeath()
@@ -98,8 +118,10 @@ public class CharacterStateManager : MonoBehaviour
 
     IEnumerator ReloadCoroutine()
     {
+        Debug.Log("Reloading...");
         yield return new WaitForSeconds(reloadTime);
         SwitchState(idleState);
+        Debug.Log("Reloaded.");
 
     }
     IEnumerator InvencivilityCorutine()
