@@ -25,15 +25,18 @@ public class HealthComponent : MonoBehaviour
     }
     public void TakeDamage(int damage)
     {
-        if(gameObject.GetComponent<CharacterStateManager>() != null)
+        print("take damage");
+        if (gameObject.GetComponent<CharacterStateManager>() != null)
         {
             CharacterStateManager character = gameObject.GetComponent<CharacterStateManager>();
-            character.OnDamage();
+            print("Soy invencible? " + character.isInvencible);
             if (character.isInvencible)
                 return;
+            character.OnDamage();
 
         }
         currentHealth -= damage;
+        print("Current Health: " + currentHealth);
         for (int i = uiHearts.Length - 1; i >= 0; i--)
         {
             if (i < currentHealth)
