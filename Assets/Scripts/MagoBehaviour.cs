@@ -5,7 +5,6 @@ using UnityEngine.InputSystem.XR;
 
 public class MagoBehaviour : MonoBehaviour
 {
-    [SerializeField] private Transform target;
     [SerializeField] private float speed = 5f;
     [SerializeField] private float attackFrequency = 2f, attackDuration = 3f;
     [SerializeField] private Transform[] pathPoints;
@@ -50,10 +49,10 @@ public class MagoBehaviour : MonoBehaviour
     private Transform mostFarPointFromTarget()
     {
         Transform farthestPoint = pathPoints[0];
-        float maxDistance = Vector3.Distance(target.position, pathPoints[0].position);
+        float maxDistance = Vector3.Distance(GameManager.instance.player.position, pathPoints[0].position);
         foreach (Transform point in pathPoints)
         {
-            float distance = Vector3.Distance(target.position, point.position);
+            float distance = Vector3.Distance(GameManager.instance.player.position, point.position);
             if (distance > maxDistance)
             {
                 maxDistance = distance;
@@ -67,6 +66,6 @@ public class MagoBehaviour : MonoBehaviour
     {
         animator.SetTrigger("attack");
 
-        Instantiate(attackPrefab, new Vector3(target.position.x, 1f, target.position.z), Quaternion.identity);
+        Instantiate(attackPrefab, new Vector3(GameManager.instance.player.position.x, 1f, GameManager.instance.player.position.z), Quaternion.identity);
     }
 }

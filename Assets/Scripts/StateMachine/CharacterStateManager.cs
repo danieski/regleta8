@@ -19,7 +19,7 @@ public class CharacterStateManager : MonoBehaviour
     private Vector3 velocityCharacter;
     public bool isInvencible;
     public Animator animator;
-    [SerializeField] private LineAttack lineAttack;
+    [SerializeField] private LineAttack lineAttack, lineAttack2;
 
     private Room.Direction facingDirection = Room.Direction.TOP;
 
@@ -68,19 +68,22 @@ public class CharacterStateManager : MonoBehaviour
     }
     public void ShootDirection(InputAction.CallbackContext value)
     {
-        Vector2 input = value.ReadValue<Vector2>();
-        if (input == Vector2.zero) return;
-
-
-        if (Mathf.Abs(input.x) > Mathf.Abs(input.y))
+        if(value.phase != InputActionPhase.Performed) return;
+        switch (value.control.name)
         {
-            // Izquierda / Derecha
-            facingDirection = input.x > 0f ?Room.Direction.RIGHT : Room.Direction.LEFT;
-        }
-        else
-        {
-            // Arriba / Abajo
-            facingDirection = input.y > 0f ? Room.Direction.TOP : Room.Direction.BOTTOM;
+            case "upArrow":
+                facingDirection = Room.Direction.TOP;
+                break;
+            case "downArrow":
+                facingDirection = Room.Direction.BOTTOM;
+                break;
+            case "leftArrow":
+                facingDirection = Room.Direction.LEFT;
+                break;
+            case "rightArrow":
+                facingDirection = Room.Direction.RIGHT;
+                break;
+
         }
 
     }
@@ -95,27 +98,20 @@ public class CharacterStateManager : MonoBehaviour
         switch (facingDirection)
         {
             case Room.Direction.TOP:
-                //animator.SetTrigger("ShootUp");
                 Instantiate(bulletPrefab, transform.position + new Vector3(0, 0, 1), Quaternion.Euler(0, 0, 0));
                 break;
             case Room.Direction.BOTTOM:
-                //animator.SetTrigger("ShootDown");
+                Instantiate(bulletPrefab, transform.position + new Vector3(0, 0, -1), Quaternion.Euler(0, 180, 0));
                 break;
             case Room.Direction.LEFT:
-                //animator.SetTrigger("ShootLeft");
+                lineAttack2.Attack();
                 break;
             case Room.Direction.RIGHT:
-                //animator.SetTrigger("ShootRight");
                 lineAttack.Attack();
                 break;
         }
         StartCoroutine(ReloadCoroutine());
     }
-    public void OnDeath()
-    {
-        SceneManager.LoadScene("Death");
-    }
-
     IEnumerator ReloadCoroutine()
     {
         Debug.Log("Reloading...");

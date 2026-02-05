@@ -7,7 +7,10 @@ public class EnemyBasicScript : MonoBehaviour
     public float speed = 3f;
     void Start()
     {
-        
+        if (targetPosition == null)
+        {
+            targetPosition = GameManager.instance.player.gameObject;
+        }
     }
     void Update()
     {

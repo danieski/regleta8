@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5890845401469801117}
   - component: {fileID: 1557383276512438447}
   - component: {fileID: 9070061599995313380}
+  - component: {fileID: 6628544775659736679}
   m_Layer: 0
   m_Name: Mago
   m_TagString: Untagged
@@ -48,6 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bef72389229afcf48a8248d8c5106bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HurtComponent
+  imPlayer: 0
   damage: 3
 --- !u!114 &5890845401469801117
 MonoBehaviour:
@@ -66,6 +68,7 @@ MonoBehaviour:
   onDie:
     m_PersistentCalls:
       m_Calls: []
+  uiHearts: []
 --- !u!143 &1557383276512438447
 CharacterController:
   m_ObjectHideFlags: 0
@@ -84,8 +87,8 @@ CharacterController:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Height: 2
-  m_Radius: 0.5
+  m_Height: 6.26
+  m_Radius: 2.15
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -119,6 +122,27 @@ MonoBehaviour:
   controller: {fileID: 1557383276512438447}
   animator: {fileID: 6394551514942500041}
   attackPrefab: {fileID: 5430288145016196038, guid: 3a463ebfc814cf645bf0e6f98e95bed9, type: 3}
+--- !u!135 &6628544775659736679
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 862118953284352212}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 2.82
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4337257510289339008
 GameObject:
   m_ObjectHideFlags: 0
@@ -147,7 +171,7 @@ Transform:
   m_GameObject: {fileID: 4337257510289339008}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.9, z: 0}
+  m_LocalPosition: {x: 0, y: 0.49, z: 0}
   m_LocalScale: {x: 0.40779, y: 0.40779, z: 0.40779}
   m_ConstrainProportionsScale: 0
   m_Children: []

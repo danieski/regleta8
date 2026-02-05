@@ -4,6 +4,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance { get; private set; }
     public Camera mainCamera;
+    public Transform player;
 
     void Start()
     {
@@ -12,6 +13,8 @@ public class GameManager : MonoBehaviour
             instance = this;
             if (mainCamera == null)
                 mainCamera = Camera.main;
+            if (player == null)
+                player = GameObject.FindGameObjectWithTag("Player").transform;
         } else
         {
             Destroy(gameObject);
