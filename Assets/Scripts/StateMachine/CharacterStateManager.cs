@@ -14,6 +14,9 @@ public class CharacterStateManager : MonoBehaviour
     public CharacterController controller;
     public float velocityVariable = 5f;
     public BulletScript bulletPrefab;
+    public CharcoScript charcoPrefab;
+    public ChargedShoot bigBulletPrefab;
+    public GameObject fakeBigBullet;
     public float reloadTime = 1;
     private BulletScript MyBullet;
     private Vector3 velocityCharacter;
@@ -68,6 +71,25 @@ public class CharacterStateManager : MonoBehaviour
     }
     public void ShootDirection(InputAction.CallbackContext value)
     {
+        print(currentState);
+        if (value.control.name == "leftArrow" && currentState!=reloadState)
+        {
+            if (value.phase == InputActionPhase.Performed)
+            {
+                fakeBigBullet.SetActive(true);
+                print("Presiono");
+                
+            }
+            if (value.phase == InputActionPhase.Canceled)
+            {
+                print("Suelto");
+                Instantiate(bigBulletPrefab, transform.position + new Vector3(-3, 0, 0), Quaternion.Euler(0, 90, 0));
+                fakeBigBullet.SetActive(false);
+                SwitchState(reloadState);
+                StartCoroutine(ReloadCoroutine());
+            }
+            return;
+        }
         if(value.phase != InputActionPhase.Performed) return;
         switch (value.control.name)
         {
@@ -98,13 +120,16 @@ public class CharacterStateManager : MonoBehaviour
         switch (facingDirection)
         {
             case Room.Direction.TOP:
-                Instantiate(bulletPrefab, transform.position + new Vector3(0, 0, 1), Quaternion.Euler(0, 0, 0));
+                Instantiate(charcoPrefab,transform.position-new Vector3(0,3,0), Quaternion.Euler(90, 0, 0));
+
                 break;
             case Room.Direction.BOTTOM:
                 Instantiate(bulletPrefab, transform.position + new Vector3(0, 0, -1), Quaternion.Euler(0, 180, 0));
+                Instantiate(bulletPrefab, transform.position + new Vector3(0, 0, -1), Quaternion.Euler(0, 150, 0));
+                Instantiate(bulletPrefab, transform.position + new Vector3(0, 0, -1), Quaternion.Euler(0, 210, 0));
                 break;
             case Room.Direction.LEFT:
-                lineAttack2.Attack();
+                print("Disparo a la izquierda");
                 break;
             case Room.Direction.RIGHT:
                 lineAttack.Attack();
