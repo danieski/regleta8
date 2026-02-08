@@ -1,0 +1,29 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+        "."
+    ],
+    "fileStates": {
+        "pattern_group.tsx": {
+            "dynamicWrapping": true,
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "map.height": 10,
+    "map.renderOrder": "3",
+    "map.width": 10,
+    "openFiles": [
+        "pattern_group.tsx"
+    ],
+    "project": "sin nombre.tiled-project",
+    "recentFiles": [
+        "pattern_group.tsx"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.type": 1
+}

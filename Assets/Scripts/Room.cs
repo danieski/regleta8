@@ -20,9 +20,49 @@ public class Room : MonoBehaviour
     private int deadEnemies = 0;
     private bool Completed { get { return deadEnemies >= enemies.Length; }  }
 
-    public IEnumerator EnterRoom()
+    public bool HasDoor(Direction direction)
     {
-        GameManager.instance.mainCamera.transform.DOMove(transform.position + Vector3.up * GameManager.instance.mainCamera.transform.position.y, 0.5f).SetEase(Ease.InOutFlash);
+        if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.ALL) return true;
+
+        switch (direction)
+        {
+            case Direction.LEFT:
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.THREE && numClockRotations != 1) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.STRAIGHT && numClockRotations % 2 != 0) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.L && numClockRotations > 1) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.ONE && numClockRotations == 3) return true;
+                return false;
+            case Direction.TOP:
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.THREE && numClockRotations != 2) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.STRAIGHT && numClockRotations % 2 == 0) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.L && numClockRotations != 1 && numClockRotations != 2) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.ONE && numClockRotations == 0) return true;
+                return false;
+            case Direction.RIGHT:
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.THREE && numClockRotations != 3) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.STRAIGHT && numClockRotations % 2 != 0) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.L && numClockRotations < 2) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.ONE && numClockRotations == 1) return true;
+                return false;
+            case Direction.BOTTOM:
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.THREE && numClockRotations != 0) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.STRAIGHT && numClockRotations % 2 == 0) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.L && numClockRotations != 0 && numClockRotations != 3) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.ONE && numClockRotations == 2) return true;
+                return false;
+        }
+        return false;
+    }
+
+    public void EnterRoom()
+    {
+        StartCoroutine(EnterRoomCoroutine());
+    }
+
+    IEnumerator EnterRoomCoroutine()
+    {
+        GameManager.instance.mainCamera.transform.DOMove(new Vector3(transform.position.x, GameManager.instance.mainCamera.transform.position.y, transform.position.z), 0.5f).SetEase(Ease.InOutFlash);
+        yield return null;
         if (!Completed)
         {
             yield return new WaitForSeconds(1f);
@@ -38,31 +78,31 @@ public class Room : MonoBehaviour
         }
     }
 
-    public void ExitRoom(string direction)
-    {
-        Room room = leftRoom;
-        switch (direction)
-        {
-            case "LEFT":
-                room = leftRoom;
-                break;
-            case "TOP":
-                room = topRoom;
-                break;
-            case "RIGHT":
-                room = rightRoom;
-                break;
-            case "BOTTOM":
-                room = bottomRoom;
-                break;
+    //public void ExitRoom(string direction)
+    //{
+    //    Room room = leftRoom;
+    //    switch (direction)
+    //    {
+    //        case "LEFT":
+    //            room = leftRoom;
+    //            break;
+    //        case "TOP":
+    //            room = topRoom;
+    //            break;
+    //        case "RIGHT":
+    //            room = rightRoom;
+    //            break;
+    //        case "BOTTOM":
+    //            room = bottomRoom;
+    //            break;
                 
-        }
-        room.StartCoroutine(room.EnterRoom());
-        for (int i = 0; i < doors.Length; i++)
-        {
-            doors[i].SetActive(false);
-        }
-    }
+    //    }
+    //    room.StartCoroutine(room.EnterRoom());
+    //    for (int i = 0; i < doors.Length; i++)
+    //    {
+    //        doors[i].SetActive(false);
+    //    }
+    //}
 
     public void EnemyDead()
     {
@@ -71,8 +111,7 @@ public class Room : MonoBehaviour
         {
             for (int i = 0; i < doors.Length; i++)
             {
-                doors[i].transform.GetChild(0).gameObject.SetActive(false);
-                doors[i].GetComponent<Collider>().isTrigger = true;
+                doors[i].SetActive(false);
             }
         }
     }
