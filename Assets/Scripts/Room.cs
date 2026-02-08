@@ -20,6 +20,40 @@ public class Room : MonoBehaviour
     private int deadEnemies = 0;
     private bool Completed { get { return deadEnemies >= enemies.Length; }  }
 
+    public bool HasDoor(Direction direction)
+    {
+        if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.ALL) return true;
+
+        switch (direction)
+        {
+            case Direction.LEFT:
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.THREE && numClockRotations != 1) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.STRAIGHT && numClockRotations % 2 != 0) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.L && numClockRotations > 1) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.ONE && numClockRotations == 3) return true;
+                return false;
+            case Direction.TOP:
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.THREE && numClockRotations != 2) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.STRAIGHT && numClockRotations % 2 == 0) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.L && numClockRotations != 1 && numClockRotations != 2) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.ONE && numClockRotations == 0) return true;
+                return false;
+            case Direction.RIGHT:
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.THREE && numClockRotations != 3) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.STRAIGHT && numClockRotations % 2 != 0) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.L && numClockRotations < 2) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.ONE && numClockRotations == 1) return true;
+                return false;
+            case Direction.BOTTOM:
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.THREE && numClockRotations != 0) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.STRAIGHT && numClockRotations % 2 == 0) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.L && numClockRotations != 0 && numClockRotations != 3) return true;
+                if (roomInfo.doorsConfig == RoomInfo.DoorsConfig.ONE && numClockRotations == 2) return true;
+                return false;
+        }
+        return false;
+    }
+
     public IEnumerator EnterRoom()
     {
         GameManager.instance.mainCamera.transform.DOMove(transform.position + Vector3.up * GameManager.instance.mainCamera.transform.position.y, 0.5f).SetEase(Ease.InOutFlash);
