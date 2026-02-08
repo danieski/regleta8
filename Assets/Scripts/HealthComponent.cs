@@ -8,6 +8,7 @@ public class HealthComponent : MonoBehaviour
 
     [SerializeField] private UnityEvent onDie;
     [SerializeField] private GameObject[] uiHearts;
+    [SerializeField] private Animator animator;
 
     public void OnDie()
     {
@@ -36,6 +37,8 @@ public class HealthComponent : MonoBehaviour
 
         }
         currentHealth -= damage;
+        if (animator != null)
+            animator.SetTrigger("hurt");
         print("Current Health: " + currentHealth);
         for (int i = uiHearts.Length - 1; i >= 0; i--)
         {

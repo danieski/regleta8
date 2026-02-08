@@ -14,31 +14,11 @@ public class CharcoScript : MonoBehaviour
     {
         collider = GetComponent<Collider>();
         collider.isTrigger = true;
-        StartCoroutine(TickRefresh());
         transform.DOScale(6,1.3f);
+        Invoke("TTLDie", TTL);
     }
-
-    // Update is called once per frame
-    void Update()
+    private void TTLDie()
     {
-        
-
-       // print(test.name);
-
-    }
-    IEnumerator TickRefresh()
-    {
-        yield return new WaitForSeconds(tick);
-        collider.providesContacts = isActive;
-        isActive= !isActive;
-        StartCoroutine(TickRefresh());
-        StartCoroutine(TTLDie());
-        
-        
-    }
-    IEnumerator TTLDie()
-    {
-        yield return new WaitForSeconds(TTL);
         Destroy(gameObject); 
     }
     private void OnTriggerStay(Collider other)
@@ -47,10 +27,5 @@ public class CharcoScript : MonoBehaviour
         {
             other.GetComponent<HealthComponent>().TakeDamage(damage);
         }
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        print("tnego a :" + other.name);    
     }
 }
