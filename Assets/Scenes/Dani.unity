@@ -1781,78 +1781,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670894809927244147, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 254275201}
-    - targetCorrespondingSourceObject: {fileID: 988988375585151716, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 254275200}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
---- !u!1 &254275196 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 988988375585151716, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-  m_PrefabInstance: {fileID: 254275195}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &254275199 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670894809927244147, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-  m_PrefabInstance: {fileID: 254275195}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &254275200
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 254275196}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1314475989}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BOTTOM
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &254275201
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 254275199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1314475989}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: LEFT
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &255950194 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: -3237904571300378511, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
@@ -1935,43 +1865,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6024132711365030445, guid: cef37c8602ca6ea4eb3b1ead14600440, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 260713230}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cef37c8602ca6ea4eb3b1ead14600440, type: 3}
---- !u!1 &260713229 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6024132711365030445, guid: cef37c8602ca6ea4eb3b1ead14600440, type: 3}
-  m_PrefabInstance: {fileID: 260713227}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &260713230
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 260713229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 403898423}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TOP
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &261319365 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7059331865254988014, guid: 549b4afe80a953947af4b18329f59cb0, type: 3}
@@ -2042,11 +1937,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38cfd9df782c0724c954cc45a6bf1458, type: 3}
---- !u!4 &303434135 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2777341987989818229, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-  m_PrefabInstance: {fileID: 1935839943}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &313020652
 GameObject:
   m_ObjectHideFlags: 0
@@ -2300,51 +2190,8 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1053819041661350478, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1946886899}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670894809927244147, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1893151730}
-    - targetCorrespondingSourceObject: {fileID: 988988375585151716, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 332270832}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
---- !u!1 &332270830 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 988988375585151716, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-  m_PrefabInstance: {fileID: 332270829}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &332270831 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670894809927244147, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-  m_PrefabInstance: {fileID: 332270829}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &332270832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332270830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1146175207}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: RIGHT
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &332270833 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1053819041661350478, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
@@ -2594,118 +2441,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4236136308023015779, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1025070335}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5885425926744665085, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 341210640}
-    - targetCorrespondingSourceObject: {fileID: 877076862168354797, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 341210639}
-    - targetCorrespondingSourceObject: {fileID: 4059535224042904854, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 341210638}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
---- !u!1 &341210633 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4059535224042904854, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-  m_PrefabInstance: {fileID: 341210632}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &341210634 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4236136308023015779, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
   m_PrefabInstance: {fileID: 341210632}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &341210635 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 877076862168354797, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-  m_PrefabInstance: {fileID: 341210632}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &341210637 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5885425926744665085, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-  m_PrefabInstance: {fileID: 341210632}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &341210638
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341210633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1973309918}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: RIGHT
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &341210639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341210635}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1973309918}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: UP
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &341210640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 341210637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1973309918}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BOTTOM
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &367435376
 GameObject:
   m_ObjectHideFlags: 0
@@ -2844,83 +2586,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1053819041661350478, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 536631967}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670894809927244147, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 374768622}
-    - targetCorrespondingSourceObject: {fileID: 988988375585151716, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 374768621}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
---- !u!1 &374768618 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 988988375585151716, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-  m_PrefabInstance: {fileID: 374768617}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &374768619 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1053819041661350478, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
   m_PrefabInstance: {fileID: 374768617}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &374768620 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670894809927244147, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-  m_PrefabInstance: {fileID: 374768617}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &374768621
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374768618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1211099871}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TOP
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &374768622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 374768620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1211099871}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: RIGHT
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &384167858 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1673164717470383071, guid: 51c2acd118fa11b46859da4835ad5897, type: 3}
@@ -3539,13 +3211,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3409894781293046312, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1708625580}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3637447297283733402, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2098157785}
-    - targetCorrespondingSourceObject: {fileID: 4387544083422908332, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2082332654}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
 --- !u!4 &491531028 stripped
 Transform:
@@ -4632,43 +4298,8 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1200581144798561968, guid: cef37c8602ca6ea4eb3b1ead14600440, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1292167029}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6024132711365030445, guid: cef37c8602ca6ea4eb3b1ead14600440, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 748648153}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cef37c8602ca6ea4eb3b1ead14600440, type: 3}
---- !u!1 &748648152 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6024132711365030445, guid: cef37c8602ca6ea4eb3b1ead14600440, type: 3}
-  m_PrefabInstance: {fileID: 748648151}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &748648153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 748648152}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1755565124}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BOTTOM
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &748648154 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1200581144798561968, guid: cef37c8602ca6ea4eb3b1ead14600440, type: 3}
@@ -4877,48 +4508,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1200581144798561968, guid: cef37c8602ca6ea4eb3b1ead14600440, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1832373998}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6024132711365030445, guid: cef37c8602ca6ea4eb3b1ead14600440, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 772677265}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cef37c8602ca6ea4eb3b1ead14600440, type: 3}
 --- !u!4 &772677263 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1200581144798561968, guid: cef37c8602ca6ea4eb3b1ead14600440, type: 3}
   m_PrefabInstance: {fileID: 772677262}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &772677264 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6024132711365030445, guid: cef37c8602ca6ea4eb3b1ead14600440, type: 3}
-  m_PrefabInstance: {fileID: 772677262}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &772677265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 772677264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 879096856}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: LEFT
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &791472721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5152,78 +4748,8 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3409894781293046312, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
       insertIndex: -1
       addedObject: {fileID: 73500204}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3637447297283733402, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 873454166}
-    - targetCorrespondingSourceObject: {fileID: 4387544083422908332, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 873454165}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
---- !u!1 &873454163 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4387544083422908332, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-  m_PrefabInstance: {fileID: 873454162}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &873454164 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3637447297283733402, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-  m_PrefabInstance: {fileID: 873454162}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &873454165
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 873454163}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2128524453}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BOTTOM
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &873454166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 873454164}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 2128524453}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TOP
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &873454167 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3409894781293046312, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
@@ -6878,6 +6404,14 @@ PrefabInstance:
       propertyPath: rightRoom
       value: 
       objectReference: {fileID: 1866761566}
+    - target: {fileID: -6653060506466292268, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
+      propertyPath: 'doors.Array.data[1]'
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -6653060506466292268, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
+      propertyPath: 'doors.Array.data[2]'
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 877076862168354797, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
       propertyPath: m_Name
       value: LEFT_DOOR
@@ -6970,118 +6504,13 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6528510607884568594, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1447735394}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5885425926744665085, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1255851521}
-    - targetCorrespondingSourceObject: {fileID: 877076862168354797, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1255851520}
-    - targetCorrespondingSourceObject: {fileID: 4059535224042904854, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1255851519}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
 --- !u!4 &1255851515 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6528510607884568594, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
   m_PrefabInstance: {fileID: 1255851514}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1255851516 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4059535224042904854, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-  m_PrefabInstance: {fileID: 1255851514}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1255851517 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 877076862168354797, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-  m_PrefabInstance: {fileID: 1255851514}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1255851518 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5885425926744665085, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-  m_PrefabInstance: {fileID: 1255851514}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1255851519
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255851516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 528830327}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TOP
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1255851520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255851517}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 528830327}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: LEFT
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1255851521
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255851518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 528830327}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: RIGHT
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1272362014
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7337,7 +6766,8 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2311154147983826107, guid: 38cfd9df782c0724c954cc45a6bf1458, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -8074,78 +7504,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1670894809927244147, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1370406431}
-    - targetCorrespondingSourceObject: {fileID: 988988375585151716, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1370406430}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
---- !u!1 &1370406427 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 988988375585151716, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-  m_PrefabInstance: {fileID: 1370406426}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1370406429 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1670894809927244147, guid: 5fb1b11c68dd89e4b81fccafd1b69dc6, type: 3}
-  m_PrefabInstance: {fileID: 1370406426}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1370406430
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370406427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1866761566}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BOTTOM
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1370406431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1370406429}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1866761566}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: LEFT
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!4 &1407534707 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6243821335643478601, guid: f42f00cb8b640e64caeb987b03806c76, type: 3}
@@ -9517,7 +8877,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 303434135}
+  m_Father: {fileID: 1935839944}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1691680242
 GameObject:
@@ -9859,113 +9219,8 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2404032199138604894, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1407534707}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5885425926744665085, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1711861013}
-    - targetCorrespondingSourceObject: {fileID: 877076862168354797, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1711861012}
-    - targetCorrespondingSourceObject: {fileID: 4059535224042904854, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1711861011}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
---- !u!1 &1711861007 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4059535224042904854, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-  m_PrefabInstance: {fileID: 1711861006}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1711861008 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 877076862168354797, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-  m_PrefabInstance: {fileID: 1711861006}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1711861010 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5885425926744665085, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-  m_PrefabInstance: {fileID: 1711861006}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1711861011
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1711861007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 461936675}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TOP
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1711861012
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1711861008}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 461936675}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: LEFT
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1711861013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1711861010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 461936675}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: RIGHT
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1736575899
 GameObject:
   m_ObjectHideFlags: 0
@@ -10714,78 +9969,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3637447297283733402, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1847651546}
-    - targetCorrespondingSourceObject: {fileID: 4387544083422908332, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1847651545}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
---- !u!1 &1847651542 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4387544083422908332, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-  m_PrefabInstance: {fileID: 1847651541}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1847651544 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3637447297283733402, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-  m_PrefabInstance: {fileID: 1847651541}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1847651545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847651542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 331948632}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BOTTOM
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1847651546
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1847651544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 331948632}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TOP
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1849940626
 GameObject:
   m_ObjectHideFlags: 0
@@ -11116,33 +10301,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1025070335}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1893151730
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 332270831}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1146175207}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BOTTOM
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1903734035
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11833,78 +10991,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3637447297283733402, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1933911569}
-    - targetCorrespondingSourceObject: {fileID: 4387544083422908332, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1933911568}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
---- !u!1 &1933911566 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4387544083422908332, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-  m_PrefabInstance: {fileID: 1933911565}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1933911567 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3637447297283733402, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-  m_PrefabInstance: {fileID: 1933911565}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1933911568
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933911566}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 255950194}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: LEFT
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1933911569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933911567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 255950194}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: LEFT
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &1935839943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12052,121 +11140,16 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4236136308023015779, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1075987977}
-    - targetCorrespondingSourceObject: {fileID: 2777341987989818229, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
+    - targetCorrespondingSourceObject: {fileID: 4236136308023015779, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1685270589}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5885425926744665085, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1935839952}
-    - targetCorrespondingSourceObject: {fileID: 877076862168354797, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1935839951}
-    - targetCorrespondingSourceObject: {fileID: 4059535224042904854, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1935839950}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
 --- !u!4 &1935839944 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4236136308023015779, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
   m_PrefabInstance: {fileID: 1935839943}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1935839945 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4059535224042904854, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-  m_PrefabInstance: {fileID: 1935839943}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1935839947 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 877076862168354797, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-  m_PrefabInstance: {fileID: 1935839943}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1935839949 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5885425926744665085, guid: 9939fbe0647097d4fbce32179cd70055, type: 3}
-  m_PrefabInstance: {fileID: 1935839943}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1935839950
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935839945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1199391998}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: LEFT
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1935839951
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935839947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1199391998}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: BOTTOM
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!114 &1935839952
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935839949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1199391998}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: TOP
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1939828949 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3823422700292830671, guid: 38cfd9df782c0724c954cc45a6bf1458, type: 3}
@@ -12680,38 +11663,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3823422700292830671, guid: 38cfd9df782c0724c954cc45a6bf1458, type: 3}
   m_PrefabInstance: {fileID: 49123266}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2082332649 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4387544083422908332, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-  m_PrefabInstance: {fileID: 491531027}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2082332654
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2082332649}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 945510165}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: LEFT
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1001 &2088310791
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12777,38 +11728,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 38cfd9df782c0724c954cc45a6bf1458, type: 3}
---- !u!1 &2098157780 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3637447297283733402, guid: e115cc0b75add4f49a8c508ffb498451, type: 3}
-  m_PrefabInstance: {fileID: 491531027}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2098157785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2098157780}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 308e82abab9601346a1ee11d7f0fadb1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TriggerEnter
-  onTrigger:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 945510165}
-        m_TargetAssemblyTypeName: Room, Assembly-CSharp
-        m_MethodName: ExitRoom
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: RIGHT
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &2111263421
 GameObject:
   m_ObjectHideFlags: 0

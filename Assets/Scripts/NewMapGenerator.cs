@@ -81,7 +81,6 @@ public class NewMapGenerator : MonoBehaviour
         // Aleatorizar punto de inicio y orientación
         int initColumn = Random.Range(1, numColumns - 1);
         int initRow = Random.Range(1, numRows - 1);
-        print("La habitación inicial estará en la celda " + initRow + ", " + initColumn);
         RoomInfo roomInfo = initRooms[Random.Range(0, initRooms.Count)];
 
         // Rellenar las habitaciones normales
@@ -126,7 +125,6 @@ public class NewMapGenerator : MonoBehaviour
             roomInfo = roomsByDoors[selectedConfig.doorsConfig][Random.Range(0, roomsByDoors[selectedConfig.doorsConfig].Count)];
             numClockRotations = selectedConfig.numClockRotations;
         }
-        print("En la celda " + row + ", " + column + " se va a instanciar una habitación " + roomInfo.doorsConfig + " " + numClockRotations);
 
         // Instanciar
         Room room = Instantiate(
@@ -135,6 +133,16 @@ public class NewMapGenerator : MonoBehaviour
             Quaternion.Euler(90 * numClockRotations * Vector3.up)
         ).GetComponent<Room>();
         room.roomInfo = roomInfo;
+        room.name = "Room ( " + column+" , "+row+" )";
+        if (room.roomInfo.roomType == RoomInfo.RoomType.INIT)
+        {
+            room.name += " INIT";
+            GameManager.instance.player.transform.position = room.transform.position + Vector3.up * 3.4f;
+            room.EnterRoom();
+        } else if (room.roomInfo.roomType == RoomInfo.RoomType.BOSS)
+        {
+            room.name += " BOSS";
+        }
         room.numClockRotations = numClockRotations;
         rooms[row][column] = room;
 
@@ -167,36 +175,18 @@ public class NewMapGenerator : MonoBehaviour
     private bool CanInstantiateHere(int row, int column)
     {
         if (row < 0 || row >= numRows || column < 0 || column >= numColumns) // Si está fuera de los bordes del mapa
-        {
-            print("´La celda "+row+", "+column+" está fuera del mapa");
             return false;
-        }
         if (rooms[row][column] != null) // Si ya hay una habitación
-        {
-            print("En la celda " + row + ", " + column + " ya hay una habitación");
             return false;
-        }
 
         if (column - 1 >= 0 && rooms[row][column - 1] != null && !rooms[row][column - 1].HasDoor(Room.Direction.RIGHT))
-        {
-            print("A la izquierda de la celda " + row + ", " + column + " hay una habitación inconexa");
             return false;
-        }
         if (row - 1 >= 0 && rooms[row - 1][column] != null && !rooms[row - 1][column].HasDoor(Room.Direction.BOTTOM))
-        {
-            print("Encima de la celda " + row + ", " + column + " hay una habitación inconexa");
             return false;
-        }
         if (column + 1 < rooms[row].Count && rooms[row][column + 1] != null && !rooms[row][column + 1].HasDoor(Room.Direction.LEFT))
-        {
-            print("A la derecha de la celda" + row + ", " + column + " hay una habitación inconexa");
             return false;
-        }
         if (row + 1 < rooms.Count && rooms[row + 1][column] != null && !rooms[row + 1][column].HasDoor(Room.Direction.TOP))
-        {
-            print("Debajo de la celda" + row + ", " + column + " hay una habitación inconexa");
             return false;
-        }
         return true;
     }
 

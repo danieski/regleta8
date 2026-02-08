@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
     public Camera mainCamera;
     public Transform player;
 
-    void Start()
+    void Awake()
     {
         if (instance == null)
         {

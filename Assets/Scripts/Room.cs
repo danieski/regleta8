@@ -54,9 +54,15 @@ public class Room : MonoBehaviour
         return false;
     }
 
-    public IEnumerator EnterRoom()
+    public void EnterRoom()
     {
-        GameManager.instance.mainCamera.transform.DOMove(transform.position + Vector3.up * GameManager.instance.mainCamera.transform.position.y, 0.5f).SetEase(Ease.InOutFlash);
+        StartCoroutine(EnterRoomCoroutine());
+    }
+
+    IEnumerator EnterRoomCoroutine()
+    {
+        GameManager.instance.mainCamera.transform.DOMove(new Vector3(transform.position.x, GameManager.instance.mainCamera.transform.position.y, transform.position.z), 0.5f).SetEase(Ease.InOutFlash);
+        yield return null;
         if (!Completed)
         {
             yield return new WaitForSeconds(1f);
@@ -72,31 +78,31 @@ public class Room : MonoBehaviour
         }
     }
 
-    public void ExitRoom(string direction)
-    {
-        Room room = leftRoom;
-        switch (direction)
-        {
-            case "LEFT":
-                room = leftRoom;
-                break;
-            case "TOP":
-                room = topRoom;
-                break;
-            case "RIGHT":
-                room = rightRoom;
-                break;
-            case "BOTTOM":
-                room = bottomRoom;
-                break;
+    //public void ExitRoom(string direction)
+    //{
+    //    Room room = leftRoom;
+    //    switch (direction)
+    //    {
+    //        case "LEFT":
+    //            room = leftRoom;
+    //            break;
+    //        case "TOP":
+    //            room = topRoom;
+    //            break;
+    //        case "RIGHT":
+    //            room = rightRoom;
+    //            break;
+    //        case "BOTTOM":
+    //            room = bottomRoom;
+    //            break;
                 
-        }
-        room.StartCoroutine(room.EnterRoom());
-        for (int i = 0; i < doors.Length; i++)
-        {
-            doors[i].SetActive(false);
-        }
-    }
+    //    }
+    //    room.StartCoroutine(room.EnterRoom());
+    //    for (int i = 0; i < doors.Length; i++)
+    //    {
+    //        doors[i].SetActive(false);
+    //    }
+    //}
 
     public void EnemyDead()
     {
@@ -105,8 +111,7 @@ public class Room : MonoBehaviour
         {
             for (int i = 0; i < doors.Length; i++)
             {
-                doors[i].transform.GetChild(0).gameObject.SetActive(false);
-                doors[i].GetComponent<Collider>().isTrigger = true;
+                doors[i].SetActive(false);
             }
         }
     }
