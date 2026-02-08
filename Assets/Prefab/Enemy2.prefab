@@ -95,6 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bef72389229afcf48a8248d8c5106bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HurtComponent
+  imPlayer: 0
   damage: 1
 --- !u!114 &3838090681500838234
 MonoBehaviour:
@@ -113,6 +114,7 @@ MonoBehaviour:
   onDie:
     m_PersistentCalls:
       m_Calls: []
+  uiHearts: []
 --- !u!114 &6484456199883190139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -127,7 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyBasicScript
   targetPosition: {fileID: 0}
   controller: {fileID: 635021317267631242}
-  speed: 3
+  speed: 15
 --- !u!1 &7777459893186469966
 GameObject:
   m_ObjectHideFlags: 0

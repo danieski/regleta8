@@ -219,6 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bef72389229afcf48a8248d8c5106bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  imPlayer: 0
   damage: 1
 --- !u!114 &6304753420700813893
 MonoBehaviour:
@@ -249,6 +250,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  uiHearts: []
 --- !u!114 &5610194505603513746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   targetPosition: {fileID: 0}
   controller: {fileID: 7158637080148092787}
-  speed: 6
+  speed: 12
 --- !u!143 &7158637080148092787
 CharacterController:
   m_ObjectHideFlags: 0
