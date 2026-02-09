@@ -426,6 +426,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   uiHearts: []
+  animator: {fileID: 0}
 --- !u!143 &8616779707565887658
 CharacterController:
   m_ObjectHideFlags: 0
@@ -466,6 +467,9 @@ MonoBehaviour:
   controller: {fileID: 8616779707565887658}
   velocityVariable: 20
   bulletPrefab: {fileID: 4038922412045295120, guid: 9d2e6c9ef2362ca4c8b9a95878d415ce, type: 3}
+  charcoPrefab: {fileID: 2671450917470003831, guid: 5b6e6f77b4f7a2841ae621edb8bb2856, type: 3}
+  bigBulletPrefab: {fileID: 2504469683584048889, guid: 829a7de92127f944aa03eae7c31edf38, type: 3}
+  fakeBigBullet: {fileID: 7960417911699779282, guid: 829a7de92127f944aa03eae7c31edf38, type: 3}
   reloadTime: 1
   isInvencible: 0
   animator: {fileID: 4208026582129387783}
