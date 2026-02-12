@@ -10,7 +10,7 @@ public class CharacterScript : MonoBehaviour
     }
     void Update()
     {
-        ;
+        
     }
 
 
