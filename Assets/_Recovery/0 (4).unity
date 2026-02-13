@@ -132,14 +132,6 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 2399389011032284344, guid: c1cbc5ceae5576c4fa8f402dae7967f3, type: 3}
-      propertyPath: maxHealth
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2399389011032284344, guid: c1cbc5ceae5576c4fa8f402dae7967f3, type: 3}
-      propertyPath: currentHealth
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2399389011032284344, guid: c1cbc5ceae5576c4fa8f402dae7967f3, type: 3}
       propertyPath: uiHearts.Array.size
       value: 10
       objectReference: {fileID: 0}
@@ -520,14 +512,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6304753420700813893, guid: cf5129b12f0061245a3747f08f792040, type: 3}
-      propertyPath: maxHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6304753420700813893, guid: cf5129b12f0061245a3747f08f792040, type: 3}
-      propertyPath: currentHealth
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 6601159254762450909, guid: cf5129b12f0061245a3747f08f792040, type: 3}
       propertyPath: m_LocalPosition.x
       value: 15.086409

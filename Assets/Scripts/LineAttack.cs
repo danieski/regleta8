@@ -37,7 +37,7 @@ public class LineAttack : MonoBehaviour
         {
             if (hit.collider.tag == "Player") continue;
             HealthComponent health = hit.collider.GetComponent<HealthComponent>();
-            if (health != null)
+            if (health != null )
             {
                 health.TakeDamage(damage);
             }
