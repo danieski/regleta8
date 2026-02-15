@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -9,17 +10,19 @@ public class PlayerScript : MonoBehaviour
     {
         IDLE,
         RELOAD,
-        DEATH
+        DEATH,
+        CHARGING
     }
     public states myState;
 
     //Variables
     public float velocityVariable = 5f;
     public float reloadTime = 1;
+    public float chargedTimeCD = 2f;
+    private float chargeTimer = 2f;
 
     //Prefabs
     public GameObject fakeBigBullet;
-    private BulletScript MyBullet;
     public BulletScript bulletPrefab;
     public CharcoScript charcoPrefab;
     public ChargedShoot bigBulletPrefab;
@@ -58,6 +61,13 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
         controller.Move(velocityCharacter * Time.deltaTime * velocityVariable);
+
+        switch(myState)
+        {
+            case states.CHARGING:
+                ChargingUpdate();
+                break;
+        }
     }
 
 
@@ -84,20 +94,24 @@ public class PlayerScript : MonoBehaviour
         }
 
     }
-    public void Shoot(InputAction.CallbackContext value)
-    {
+    public void Shoot(InputAction.CallbackContext value){
         //Shoot Left
+
         if (value.control.name == "leftArrow" && myState != states.RELOAD)
         {
+
             if (value.phase == InputActionPhase.Performed)
             {
+                //cambiamos estado
+                myState = states.CHARGING;
+                //activamos muzzle
                 fakeBigBullet.SetActive(true);
+                //Visual feedback de c
             }
-            if (value.phase == InputActionPhase.Canceled)
+            if (value.phase == InputActionPhase.Canceled && myState == states.CHARGING)
             {
-                Instantiate(bigBulletPrefab, transform.position + new Vector3(-3, 0, 0), Quaternion.Euler(0, 90, 0));
-                fakeBigBullet.SetActive(false);
-                StartCoroutine(ReloadCoroutine());
+                //Se ha interrumpido la carga, reseteamos todo                
+                ResetChargedShoot();
             }
             return;
         }
@@ -130,11 +144,28 @@ public class PlayerScript : MonoBehaviour
         myState = states.RELOAD;
         yield return new WaitForSeconds(reloadTime);
         myState = states.IDLE;
-
     }
     public void OnPlayerDie()
     {
         SceneManager.LoadScene("Death");
+    }
+
+    public void ResetChargedShoot()
+    {
+        fakeBigBullet.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+        fakeBigBullet.SetActive(false);
+        myState = states.IDLE;
+        chargeTimer = chargedTimeCD;
+        StartCoroutine(ReloadCoroutine());
+    }
+    public void ChargingUpdate()
+    {
+        chargeTimer -= Time.deltaTime;
+        if (chargeTimer < 0)
+        {
+            ResetChargedShoot();
+            Instantiate(bigBulletPrefab, transform.position + new Vector3(-3, 0, 0), Quaternion.Euler(90, 0, 0));
+        }
     }
 
 }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4468817254321534897}
   - component: {fileID: 523855964734252639}
   - component: {fileID: 2504469683584048889}
+  - component: {fileID: -134865335752499087}
   m_Layer: 0
   m_Name: BigBall
   m_TagString: Untagged
@@ -126,3 +127,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b34f520ab172cb4da1b65f487037ec6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChargedShoot
+--- !u!114 &-134865335752499087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7960417911699779282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bef72389229afcf48a8248d8c5106bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HurtComponent
+  imPlayer: 1
+  damage: 1
